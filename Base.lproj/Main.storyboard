@@ -17,24 +17,25 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICE GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTB-61-eNa">
                                 <rect key="frame" x="68.5" y="154" width="277" height="81"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="Ueg-nn-O70"/>
                                     <constraint firstAttribute="width" constant="277" id="aSn-aA-Abt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-R4-MqT">
                                 <rect key="frame" x="50" y="376" width="314" height="144.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-ky-tyO">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-ky-tyO">
                                         <rect key="frame" x="0.0" y="0.0" width="144.5" height="144.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ov6-ky-tyO" secondAttribute="height" multiplier="1:1" id="llF-xN-kVk"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="quC-ds-AfR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="quC-ds-AfR">
                                         <rect key="frame" x="169.5" y="0.0" width="144.5" height="144.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="quC-ds-AfR" secondAttribute="height" multiplier="1:1" id="OMq-Z0-Lj8"/>
@@ -51,8 +52,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ROLL">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
-                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="33"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="rollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvG-86-G8P"/>
@@ -60,7 +62,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PTB-61-eNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30B-tG-KkS"/>
                             <constraint firstItem="g8B-R4-MqT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfB-fV-4Vk"/>
@@ -83,6 +85,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="black1" width="399" height="399"/>
+        <image name="dice1" width="512" height="512"/>
     </resources>
 </document>
