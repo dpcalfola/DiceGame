@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICE GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTB-61-eNa">
+                                <rect key="frame" x="68.5" y="154" width="277" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Ueg-nn-O70"/>
+                                    <constraint firstAttribute="width" constant="277" id="aSn-aA-Abt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-R4-MqT">
+                                <rect key="frame" x="50" y="376" width="314" height="144.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-ky-tyO">
+                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="144.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ov6-ky-tyO" secondAttribute="height" multiplier="1:1" id="llF-xN-kVk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="quC-ds-AfR">
+                                        <rect key="frame" x="169.5" y="0.0" width="144.5" height="144.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="quC-ds-AfR" secondAttribute="height" multiplier="1:1" id="OMq-Z0-Lj8"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiF-BN-hJp">
+                                <rect key="frame" x="121.5" y="707" width="171" height="55"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="tqN-fp-2RQ"/>
+                                    <constraint firstAttribute="height" constant="55" id="ydQ-Mh-ELO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ROLL">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvG-86-G8P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.83499270156865768" green="0.72404489660809779" blue="0.97342139175257736" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PTB-61-eNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30B-tG-KkS"/>
+                            <constraint firstItem="g8B-R4-MqT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfB-fV-4Vk"/>
+                            <constraint firstItem="PTB-61-eNa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="NI0-Kb-DLl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TiF-BN-hJp" secondAttribute="bottom" constant="100" id="W8n-Uc-ygl"/>
+                            <constraint firstItem="g8B-R4-MqT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fed-Ae-wPx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g8B-R4-MqT" secondAttribute="trailing" constant="50" id="gvJ-BO-uq6"/>
+                            <constraint firstItem="TiF-BN-hJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyo-cv-OKw"/>
+                            <constraint firstItem="g8B-R4-MqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wGZ-r7-fF3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstDiceView" destination="Ov6-ky-tyO" id="vwd-4h-h0p"/>
+                        <outlet property="secondDiceView" destination="quC-ds-AfR" id="BNH-eR-qhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.43478260869574" y="338.83928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black1" width="399" height="399"/>
+    </resources>
+</document>
